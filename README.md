@@ -5,7 +5,7 @@ An API for getting information from steam using Java, with no external libraries
 Instantiate the class, then add it to your project. When it's added import the SteamAPI.java file into your project by using "import steam.SteamAPI;"
 
 ##Use within a project
-
+```java
 public static void main(String[] args){
 		SteamAPI steam = new SteamAPI("A94395C92B798F7B448A2A3658D2F856");
 		String[] sid = { "76561197960435530", "76561198046608916" };
@@ -21,3 +21,4 @@ public static void main(String[] args){
 		System.out.println(steam.GetSchemaForGame(440, SteamEnumerations.JSON));
 		System.out.println(steam.GetPlayerBans("76561197960435530"));
 	}
+```
