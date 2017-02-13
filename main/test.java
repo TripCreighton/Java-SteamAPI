@@ -5,8 +5,8 @@ import steam.SteamEnumerations;
 
 public class test {
 	public static void main(String[] args){
-		SteamAPI steam = new SteamAPI("A94395C92B798F7B448A2A3658D2F856");
-		String[] sid = { "76561197960435530", "76561198046608916" };
+		SteamAPI steam = new SteamAPI("YOUR KEY HERE");
+		String[] sid = { "SID", "SID" };
 		System.out.println(steam.GetNewsForApp(440, 3, 300, SteamEnumerations.JSON));
 		System.out.println(steam.GetGlobalAchievementPercentagesForApp(17740, 1, "global.map.emp_isle", SteamEnumerations.JSON));
 		System.out.println(steam.GetPlayerSummaries(sid, SteamEnumerations.JSON));
